@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h4,h5,h6,span, ul,ol, li,dl,dt,dd,form{padding:0;margin:0;}
+html, body { padding: 0; margin: 0;	height:auto;}
+input{border:none;outline:none;}
+textarea{	border:none;	outline:none;	overflow:auto;	resize:none;}
+select {appearance:none; -moz-appearance:none; -webkit-appearance:none;}
+select::-ms-expand{display:none;}
+input.button{	border:none;	outline:none;}
+input::-webkit-input-placeholder { opacity:1;}
+input::-moz-placeholder { opacity:1;}
+input:-ms-input-placeholder { opacity:1;}
+input:-moz-placeholder {opacity:1;}
+input[type=checkbox] {border:none;outline:none;}
+img{outline:none;border:none;max-width:100%; vertical-align:middle;}
+li{list-style:none;}
+a, a:hover{text-decoration:none;outline:none!important;}
+a:focus { outline: none; }
+
+.section{
+    max-width: 1250px;
+    margin: 0 auto;
+    background:url('../images/section_blk2_bg.jpg') no-repeat;
+    border:10px solid #ba8759;
+    outline: 2px solid #c19a6b;
+    outline-offset: 10px;  
+} 
+@font-face {
+    font-family: 'DINNextW01-Bold';
+    src: url("../fonts/DINNextW01-Bold.eot");
+    src: url("../fonts/DINNextW01-Bold.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/DINNextW01-Bold.svg#tiempos-fine-regular") format('svg'),
+         url("../fonts/DINNextW01-Bold.ttf") format('truetype'),
+         url("../fonts/DINNextW01-Bold.woff") format('woff');
+  }
+  @font-face {
+    font-family: 'DINNextW01-Regular';
+    src: url("../fonts/DINNextW01-Regular.eot");
+    src: url("../fonts/DINNextW01-Regular.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/DINNextW01-Regular.svg#tiempos-fine-regular") format('svg'),
+         url("../fonts/DINNextW01-Regular.ttf") format('truetype'),
+         url("../fonts/DINNextW01-Regular.woff") format('woff');
+  }
+.row{
+    width: 100%;
+    display: inline-block;
+    clear: right;
+}
+.logo-left-section{
+    padding: 38px 45px;
+    float: left;
+}
+.logo-right-section{
+    float:left;
+    padding: 15px 0;
+}
+.header{
+    width: 60%;
+}
+
+h3{
+    color:#ba8759;
+    font-size: 24px;
+    line-height: 1.5;
+    text-decoration: double underline;
+    font-family: 'DINNextW01-Regular';
+    padding: 15px 45px;
+}
+
+h2{
+    padding:15px 45px;
+    color:white;
+    line-height: 1.2;
+    font-family: 'DINNextW01-Bold';
+    font-size: 65px;
+}
+
+h2 span{
+    color:#c19a6b;
+    line-height: 1.2;
+    font-family: 'DINNextW01-Bold';
+    font-size: 65px;
+}
+
+h5{
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'DINNextW01-Regular';
+    font-weight: normal;
+    padding:15px 45px;
+}
+
+.button{
+    color: white;
+    font-size: 20px;
+    background-color: #c19a6b;
+    border: 1px solid #c19a6b;
+    padding: 20px 45px;
+    font-family: 'DINNextW01-Bold';
+    line-height: 1;
+    display: inline-block;
+    margin: 15px 45px;
+}
+
+.icon{
+    display: inline-block;
+    padding: 15px 45px;
+    clear: right;
+}
+.icon a{
+    color:#c19a6b;
+}
+
+.icon-cal{
+    position: relative;
+    float: left;
+    padding: 10px 45px;
+    font-size: 20px;
+    background-size: 20px;
+    line-height: 0.5;
+    font-family: 'DINNextW01-Bold';   
+    text-align: center; 
+    background: url('../images/calender_icon.png') no-repeat;
+}
+.icon-cal::after {
+    content: '';
+    position: absolute;
+    border-bottom:1px solid #ba8759;
+    height: 20px;
+    top: 6px;
+    left: 45px;
+    width:53%;
+  }
+.icon-time{
+    position: relative;
+    padding: 10px 45px;
+    float: left;
+    font-family: 'DINNextW01-Bold';
+    text-align: center; 
+    font-size: 20px;
+    background-size: 20px;
+    line-height: 0.5;
+    background: url('../images/timer_icon.png') no-repeat;
+}
+.icon-time::after {
+    content: '';
+    position: absolute;
+    border-bottom:1px solid #ba8759;
+    height: 20px;
+    top: 6px;
+    left: 45px;
+    width:62%;
+  }
+.icon-loc{
+    position: relative;
+    padding: 10px 45px;
+    margin: 20px 0;
+    float: left;
+    font-family: 'DINNextW01-Bold';
+    text-align: center; 
+    font-size: 20px;
+    background-size: 20px;
+    line-height: 0.5; 
+    background: url('../images/loc_icon.png') no-repeat;
+}
+.icon-loc::after {
+    content: '';
+    position: absolute;
+    border-bottom:1px solid #ba8759;
+    height: 20px;
+    top: 6px;
+    left: 45px;
+    width:86%;
+  }
